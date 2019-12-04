@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 //const databaseUrl = "workoutTracker";
-const databaseurl = "mongodb://idrisxa:testtest1@ds351628.mlab.com:51628/heroku_xsc82trh";
+const databaseUrl = "mongodb://idrisxa:testtest1@ds351628.mlab.com:51628/heroku_xsc82trh";
 const collections = ["exercise"];
 
 //mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/${databaseUrl}`, { useNewUrlParser: true,  useUnifiedTopology: true});

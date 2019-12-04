@@ -13,7 +13,7 @@ app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static("newpublic"));
 
 //const databaseUrl = "workoutTracker";
 const databaseUrl = "mongodb://idrisxa:testtest1@ds351628.mlab.com:51628/heroku_xsc82trh";
@@ -46,7 +46,7 @@ db.on("error", error => {
   });
 
   app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname + "./public/index.html"));
+    res.sendFile(path.join(__dirname + "./newpublic/index.html"));
   });
 
   app.post("/submit", (req, res) => {
